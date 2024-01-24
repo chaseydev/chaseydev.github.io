@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"');
+
 
 /*
 	Big Picture by HTML5 UP
@@ -2251,7 +2253,7 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
-	#about-me {
+	#about-me, #tech-stack {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -2544,4 +2546,48 @@ font-weight: lighter;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.tech-stack-tiles {
+    /* Add styles for the container of tech stack tiles */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-stack-tile {
+    /* Add styles for each tech stack tile */
+    width: 200px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    margin: 10px; /* Adjust the margin as needed */
+    /* background-color: rgba(234, 234, 234, 0.8); Transparent background color */
+    padding: 10px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+/* Styles for the image */
+.tech-stack-tile img {
+    width: 80px; /* Adjust the width of the image */
+    height: 80px; /* Adjust the height of the image */
+    object-fit: contain; /* Maintain aspect ratio and contain within the specified width and height */
+    margin-bottom: 10px; /* Adjust the spacing between image and text */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .tech-stack-tile {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+
+    .tech-stack-tile img {
+        width: 50%; /* Adjust the width of the image for small screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+        margin-bottom: 5px; /* Adjust spacing for small screens */
+    }
 }
