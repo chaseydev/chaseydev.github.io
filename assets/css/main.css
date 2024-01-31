@@ -2253,7 +2253,7 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
-	#about-me, #tech-stack {
+	#about-me, #technologies {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -2591,3 +2591,13 @@ font-weight: lighter;
         margin-bottom: 5px; /* Adjust spacing for small screens */
     }
 }
+
+#call_to_action:after {
+	content:"";
+	animation: profile 6s linear infinite;
+  }
+  @keyframes profile {
+	0%  { content: "build your ideas into reality."; }
+	50%  { content: "automate your daily workflows."; }
+	100%  { content: "find and collate the data you need"; }
+  }
