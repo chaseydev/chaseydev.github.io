@@ -2601,3 +2601,36 @@ font-weight: lighter;
 	50%  { content: "automate your daily workflows."; }
 	100%  { content: "find and collate the data you need"; }
   }
+
+.centered-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.tile {
+    flex: 1;
+    max-width: 300px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    transition: transform 0.2s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile h2 {
+    margin-top: 0;
+}
+
+.tile p {
+    margin-bottom: 0;
+}
