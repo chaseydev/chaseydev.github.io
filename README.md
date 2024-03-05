@@ -2,6 +2,8 @@
 
 Welcome to my portfolio site! This website showcases my projects, skills, and experience in software engineering.
 
+Deployed: https://chaseydev.github.io
+
 ## About Me
 I am a software engineer passionate about leveraging technology to solve real-world problems. I strive to deliver high-quality solutions that meet the needs of users and businesses alike.
 
